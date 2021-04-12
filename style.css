@@ -18,3 +18,40 @@ body{
   background-position: left center;
   background-image: url(./robot.gif);
 }
+
+button{
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 12px 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ff3482;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+  filter: brightness(95%);
+}
+button:active{
+  transform: scale(0.98);
+}
+button:disabled{
+  cursor: default;
+  filter: brightness(30%);
+}
+
+
+@media screen and (max-width:1000px){
+  button{
+    box-shadow: 3px 3px 25px 15px  rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media screen and (max-width:800px){
+  .container{
+    background-position: center center;
+    background-size: cover;
+  }
+}
