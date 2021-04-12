@@ -38,4 +38,9 @@ button.addEventListener("click", ()=>{
     getJoke().then((joke) =>{
         tellJoke(joke);
     });
+    button.disabled = true;
+});
+
+audioElement.addEventListener("ended", ()=>{
+    button.disabled = false;
 });
