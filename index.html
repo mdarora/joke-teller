@@ -12,6 +12,18 @@
     <main>
         <section class="container">
             <button id="tell-joke-btn" title="Listen a new joke">Tell me a joke</button>
+            <div class="options">
+                <select id="joke-category" title="Select the category of the joke">
+                    <option selected disabled>Select Joke category</option>
+                    <option value="Any"> Any (Default)</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Pun">Pun</option>
+                    <option value="Spooky">Spooky</option>
+                    <option value="Christmas">Christmas</option>
+                </select>
+            </div>
             <button id="tell-last-joke-btn" title="Listen last joke again" disabled>Listen last joke</button>
             <audio src="#" id="audio"></audio>
         </section>
