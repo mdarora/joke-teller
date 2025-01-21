@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke Teller</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
+        <div id="joke-container" class="joke-container">
+            <p id="jokeText" class="jokeText"></p>
+        </div>
         <section class="container">
             <button id="tell-joke-btn" title="Listen a new joke">Tell me a joke</button>
             <div class="options">
@@ -27,9 +32,11 @@
             </div>
             <button id="tell-last-joke-btn" title="Listen last joke again" disabled>Listen last joke</button>
             <audio src="#" id="audio"></audio>
+
         </section>
     </main>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
+
 </html>
